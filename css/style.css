@@ -15,6 +15,35 @@ header{
 
 }
 
+.adaptive__nav{
+	display: none;
+}
+
+.active__menu{
+	width: 100%;
+}
+
+.adaptive__menu{
+	display: none;
+}
+
+.adapt__nav__item{
+	display: block;
+  	width: 100%;
+  	text-decoration: none;
+	font-family: Segoe UI;
+	font-size: 1.271em;
+	font-weight: 200;
+	color: #6c6c6c;
+	text-align: center;
+}
+
+
+.adapt__nav__item:hover{
+	background-color: #6c6c6c;
+	color:#fff;
+}
+
 .first{
 	max-height: 80vh;
 	background: url('../img/bg.jpeg') no-repeat;
@@ -271,6 +300,10 @@ and (max-width : 375px) {
 	.second__top__item{
 		flex-direction: row;
 		justify-content: flex-start;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #cccccc;
+		padding-left: 20px;
 	}
 	.second__top__item__img{
 		width: 30%;
@@ -293,7 +326,7 @@ and (max-width : 375px) {
 		margin-left: 10px;
 	}
 	.second__top{
-		width: 90%;
+		width: 100%;
 	}
 
 	.second__bottom{
@@ -305,6 +338,17 @@ and (max-width : 375px) {
 	}
 	.second__bottom__right {
     width: 90%;
+	}
+	.adaptive__nav{
+	display: block;
+	height: auto;
+	width: 15%;
+	border: none;
+	padding: 0;
+	background: #fff;
+	}
+	header{
+		width: 90%;
 	}
 }
 
